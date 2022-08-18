@@ -34,7 +34,7 @@ steps:
 - task: ShellScript@2
   inputs:
     scriptPath: 'owasp-dependency-check.sh'
-    #args: '' # Optional
+    args: 'cat OWASP-Dependency-Check/reports/dependency-check-report.xml' 
     #disableAutoCwd: false # Optional
     #cwd: '' # Optional
     #failOnStandardError: false
