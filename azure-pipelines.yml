@@ -31,12 +31,7 @@ steps:
   displayName: 'pytest'
 
 
-- task: ShellScript@2
-  inputs:
-    scriptPath: 'owasp-dependency-check.sh'
-    args: 'cat dependency-check-report.xml' 
-    #disableAutoCwd: false # Optional
-    #cwd: '' # Optional
-    #failOnStandardError: false
-  displayName: 'Dependency Check'
-
+-  bash: 'owasp-dependency-check.sh'
+   displayName: 'Dependency check'
+  
+ 
