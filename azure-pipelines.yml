@@ -30,3 +30,12 @@ steps:
     pytest
   displayName: 'pytest'
 
+
+- task: ShellScript@2
+  inputs:
+    scriptPath: 'owasp-dependency-check.sh'
+    #args: '' # Optional
+    #disableAutoCwd: false # Optional
+    #cwd: '' # Optional
+    #failOnStandardError: false
+
