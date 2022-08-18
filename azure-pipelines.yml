@@ -38,7 +38,7 @@ steps:
     filePath: 'owasp-dependency-check.sh'
     #arguments: # Optional
     #script: '# echo Hello world' # Required when targetType == inline
-    #workingDirectory: # Optional
+    workingDirectory: $(Pipeline.Workspace)
     #failOnStderr: false # Optional
     #bashEnvValue: # Optional
  
