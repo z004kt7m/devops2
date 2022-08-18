@@ -30,8 +30,15 @@ steps:
     pytest
   displayName: 'pytest'
 
-
--  bash: 'owasp-dependency-check.sh'
-   displayName: 'Dependency check'
-  
+# Bash
+# Run a Bash script on macOS, Linux, or Windows
+- task: Bash@3
+  inputs:
+    targetType: 'filePath' # Optional. Options: filePath, inline
+    filePath: 'owasp-dependency-check.sh'
+    #arguments: # Optional
+    #script: '# echo Hello world' # Required when targetType == inline
+    #workingDirectory: # Optional
+    #failOnStderr: false # Optional
+    #bashEnvValue: # Optional
  
