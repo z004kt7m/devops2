@@ -32,10 +32,10 @@ steps:
 
 # Bash
 # Run a Bash script on macOS, Linux, or Windows
-#- task: Bash@3
+- task: Bash@3
 #  inputs:
 #    targetType: 'filePath' # Optional. Options: filePath, inline
-#    filePath: 'owasp-dependency-check.sh'
+    filePath: 'owasp-dependency-check.sh'
     #arguments: # Optional
     #script: '# echo Hello world' # Required when targetType == inline
 #    workingDirectory: $(Pipeline.Workspace)
